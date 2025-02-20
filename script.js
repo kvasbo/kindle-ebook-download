@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         Kindle Downloader (wait for dialogs)
 // @namespace    http://tampermonkey.net/
-// @version      0.4
-// @description  Waits for elements before clicking, handles AJAX page transitions and notifications
+// @version      0.5
+// @description  Automatically download your entire Kindle ebook library from Amazon
 // @match        https://www.amazon.com/hz/mycd/digital-console/contentlist/booksAll/*
 // @grant        none
 // @run-at       document-idle
 // @license      MIT
+// @author       Audun Kvasbø
 // ==/UserScript==
 
 (function () {
@@ -117,6 +118,7 @@
 			await processDropdowns(); // Recursively process dropdowns on the next page
 		} else {
 			console.log('No next page found. All dropdowns processed.');
+			alert("Reached the last page - we should be good!");
 		}
 	}
 
