@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Kindle Downloader (wait for dialogs)
+// @name         Amazon Kindle Ebook Library Downloader
 // @namespace    http://tampermonkey.net/
 // @version      0.5
 // @description  Automatically download your entire Kindle ebook library from Amazon
